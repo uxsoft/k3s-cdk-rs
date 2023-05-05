@@ -1,9 +1,5 @@
 use crate::components::*;
-
-pub trait KubernetesTemplate {
-    fn to_yaml(&self) -> String;
-    // fn build(&self) -> Vec<Box<dyn KubernetesComponent>>;
-}
+use crate::templates::*;
 
 pub struct DockerWeb<'a> {
     name: &'a str,
